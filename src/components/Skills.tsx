@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Backend_skill,
   Frontend_skill,

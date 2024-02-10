@@ -83,10 +83,12 @@ export const Socials = [
   {
     name: "Linkdin",
     src: "/linkedin-logo.svg",
+    url: "https://www.linkedin.com/in/tarun-kavipurapu-ab820b226/",
   },
   {
     name: "Github",
     src: "/github-logo.svg",
+    url: "https://github.com/tarun-kavipurapu",
   },
 ];
 

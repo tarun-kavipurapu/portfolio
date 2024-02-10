@@ -1,3 +1,6 @@
+"use client";
+
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Project";
 import Skills from "@/components/Skills";
@@ -10,6 +13,7 @@ const page = () => {
         <Hero />
         <Skills />
         <Projects />
+        <Contact />
       </div>
     </main>
   );
