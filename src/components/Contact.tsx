@@ -2,6 +2,12 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
+import { toast } from "react-toastify";
+// interface FormData {
+//   name: string;
+//   email: string;
+//   message: string;
+// }
 const Contact = () => {
   const {
     register,
@@ -9,8 +15,20 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data); // You can handle form submission here
+  const onSubmit = () => {
+    toast.warn(
+      "🦄 This Contact Form Does not work But I am sure i one i make for you will work",
+      {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      }
+    );
   };
 
   return (

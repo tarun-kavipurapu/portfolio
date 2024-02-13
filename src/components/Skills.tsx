@@ -11,6 +11,13 @@ import React from "react";
 import SkillDataProvider from "./Content/SkillDataProvider";
 import SkillText from "./Content/SkillText";
 
+interface image {
+  skill_name: string;
+  Image: string;
+  width: number;
+  height: number;
+}
+
 const Skills = () => {
   return (
     <section
@@ -66,7 +73,7 @@ const Skills = () => {
         ))}
       </div>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Other_skill.map((image, index) => (
+        {Other_skill.map((image: image, index) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
