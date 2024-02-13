@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
+
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -9,6 +11,11 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+
+const variants = {
+  hidden: { width: 0 },
+  visible: { width: "max-content", transition: { duration: 2 } },
+};
 
 const HeroContent = () => {
   return (
@@ -29,18 +36,21 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
-          <motion.span
-            className=""
-            initial={{ width: 0 }}
-            animate={{ width: "max-content" }}
-            transition={{ duration: 2 }}
-          >
+          <motion.span>
             Hey,
             <br />
-            I&apos;m Tarun, I like
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            I&apos;m Tarun, I
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
               {" "}
-              to Code{" "}
+              <Typewriter
+                words={["Code", "Eat", "Sleep", "Repeat!", "Code"]}
+                loop={1800}
+                cursor
+                cursorStyle="_"
+                typeSpeed={50}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </span>
           </motion.span>
         </motion.div>

@@ -1,13 +1,9 @@
+"use client";
 import Image from "next/image";
+
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
-import { toast } from "react-toastify";
-// interface FormData {
-//   name: string;
-//   email: string;
-//   message: string;
-// }
 const Contact = () => {
   const {
     register,
@@ -16,23 +12,11 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = () => {
-    toast.warn(
-      "🦄 This Contact Form Does not work But I am sure i one i make for you will work",
-      {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      }
-    );
+    console.log("Act react toast in future i am in a hurry");
   };
 
   return (
-    <div className="flex flex-col md:flex-row" id="contactarn r">
+    <div className="flex flex-col md:flex-row" id="contact">
       {/* Email Address */}
       <motion.div
         variants={slideInFromLeft(0.8)}
@@ -110,6 +94,7 @@ const Contact = () => {
             >
               Submit
             </button>
+            {/* <Toast /> */}
           </div>
         </form>
       </motion.div>
