@@ -225,7 +225,7 @@ export const Other_skill = [];
 
 export const projectsList = [
   {
-    src: "/NextWebsite.png",
+    src: "/postman.png",
     title: "Vtube-Video Streaming Platform",
     description: "A backend clone implementation of Video Streaming Platform ",
     url: "https://github.com/tarun-kavipurapu/vTube",
@@ -233,23 +233,26 @@ export const projectsList = [
   },
   {
     src: "/SpaceWebsite.png",
-    title: " Portfolio",
+    title: "Portfolio",
     description:
       "Website to showcase my projects and skills its what you are  viewing right now",
     stack: "Next.js, TailwindCSS",
+    url: " ",
   },
   {
-    src: "/SpaceWebsite.png",
+    src: "/myExtension.png",
     title: "Timer Plus",
     description:
       "A productivity chrome extension which has features of Pomodoro,TodoList and SiteBlocker.",
     stack: "HTML|CSS|Javascript",
+    url: "https://github.com/tarun-kavipurapu/chromeExtension",
   },
   {
-    src: "/CardImage.png",
+    src: "/blog.png",
     title: " Blog",
     description:
       "This is a basic blog website with CRUD operations leveraged with Appwrite as a Backend and React as Frontend",
-    url: "",
+    stack: "React|Appwrite|TailwindCSS",
+    url: "https://github.com/tarun-kavipurapu/blog-appwrite",
   },
 ];

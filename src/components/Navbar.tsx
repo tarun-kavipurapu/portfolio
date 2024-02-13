@@ -8,17 +8,10 @@ const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <div>
+        <div className="flex flex-row ">
           {/* <Image/>  //logo*/}
           <Link href="#about-me">
-            <Image
-              src="/Tlogo.png"
-              width={24}
-              height={24}
-              alt="icon"
-              className="rounded-full cursor-pointer bg-white"
-            />
-            <span className=" font-bold ml-[10px]  md:block text-gray-300 cursor pointer text-3xl">
+            <span className=" font-bold ml-[15px]  text-transparent md:block  cursor pointer text-3xl bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Tarun
             </span>
           </Link>
