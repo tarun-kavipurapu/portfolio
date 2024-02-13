@@ -14,18 +14,29 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
           src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="Vtube-Video Streaming Platform"
+          description="A backend clone implementation of Video Streaming Platform "
+          url="https://github.com/tarun-kavipurapu/vTube"
+          stack="Typescript|Express|MongoDB|Node.js"
         />
         <ProjectCard
           src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title=" Blog"
+          description="This is a basic blog website with CRUD operations leveraged with Appwrite as a Backend and React as Frontend"
+          url="https://github.com/tarun-kavipurapu/blog-appwrite"
+          stack="React|Appwrite"
         />
         <ProjectCard
           src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="Timer Plus"
+          description="A productivity chrome extension which has features of Pomodoro,TodoList and SiteBlocker."
+          stack="HTML|CSS|Javascript"
+        />
+        <ProjectCard
+          src="/SpaceWebsite.png"
+          title=" Portfolio"
+          description="Website to showcase my projects and skills its what you are  viewing right now"
+          stack="Next.js, TailwindCSS"
         />
       </div>
     </div>

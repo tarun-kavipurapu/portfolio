@@ -1,11 +1,11 @@
 "use client";
-
+import { motion } from "framer-motion";
 import React from "react";
 import HeroContent from "./Content/Herocontent";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full" id="about-me">
+    <motion.div className="relative flex flex-col h-full w-full" id="about-me">
       <video
         autoPlay
         muted
@@ -15,7 +15,7 @@ const Hero = () => {
         <source src="/blackhole.webm" type="video/webm" />
       </video>
       <HeroContent />
-    </div>
+    </motion.div>
   );
 };
 

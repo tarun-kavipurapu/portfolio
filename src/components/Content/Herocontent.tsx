@@ -29,7 +29,12 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
-          <span>
+          <motion.span
+            className=""
+            initial={{ width: 0 }}
+            animate={{ width: "max-content" }}
+            transition={{ duration: 2 }}
+          >
             Hey,
             <br />
             I&apos;m Tarun, I like
@@ -37,7 +42,7 @@ const HeroContent = () => {
               {" "}
               to Code{" "}
             </span>
-          </span>
+          </motion.span>
         </motion.div>
 
         <motion.p
@@ -49,14 +54,14 @@ const HeroContent = () => {
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          className="mt-14 inline-flex w-max items-center bg-[#ae7aff] p-3 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e]"
+          className=" inline-flex w-max items-center bg-[#ae7aff] p-3 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e]"
         >
           Learn More!
         </motion.a>
       </div>
 
       <motion.div
-        variants={slideInFromRight(1)}
+        variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
       >
         <Image

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-
+import { motion } from "framer-motion";
+import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
 const Contact = () => {
   const {
     register,
@@ -13,9 +14,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row" id="contactarn r">
       {/* Email Address */}
-      <div className="p-8 z-50 flex-1 rounded-[25px] relative flex flex-col items-center">
+      <motion.div
+        variants={slideInFromLeft(0.8)}
+        className="p-8 z-50 flex-1 rounded-[25px] relative flex flex-col items-center"
+      >
         <div className="text-center mb-4 flex-row flex gap-4 ">
           <h2 className="text-2xl font-bold text-white mb-4 underline">
             Email Address:
@@ -32,10 +36,13 @@ const Contact = () => {
             alt="contact"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Contact Form */}
-      <div className=" rounded-[25px] z-[50] flex flex-col flex-1 border-[#2A0E61] border items-center justify-center m-2 ">
+      <motion.div
+        variants={slideInFromRight(0.8)}
+        className=" rounded-[25px] z-[50] flex flex-col flex-1 border-[#2A0E61] border items-center justify-center m-2 "
+      >
         {/* <h2 className="text-2xl font-bold text-white mb-4  ">Contact Us</h2> */}
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -81,13 +88,13 @@ const Contact = () => {
           <div className="text-center	">
             <button
               type="submit"
-              className="mt-14 inline-flex w-max items-center bg-[#ae7aff] p-3 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] "
+              className=" inline-flex w-max items-center bg-[#ae7aff] p-3 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] "
             >
               Submit
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Navbar = () => {
         <div>
           <a href="">
             {/* <Image/>  //logo*/}
-            <span className=" font-bold ml-[10px]  md:block text-gray-300 cursor pointer">
+            <span className=" font-bold ml-[10px]  md:block text-gray-300 cursor pointer text-3xl">
               Tarun
             </span>
           </a>
