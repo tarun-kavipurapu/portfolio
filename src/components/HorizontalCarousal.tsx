@@ -15,14 +15,14 @@ interface ProjectType {
 
 const HorizontalCarousal = () => {
   return (
-    <div className="bg-inhert z-[150]" id="projects">
+    <div className="bg-inhert z-[2]" id="projects">
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
           Scroll down
         </span>
       </div>
       <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center z-[150]">
+      <div className="flex h-48 items-center justify-center z-[2]">
         <span className="font-semibold uppercase text-neutral-500">
           Scroll up
         </span>
@@ -40,7 +40,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-inhert z-[150]">
+    <section ref={targetRef} className="relative h-[300vh] bg-inhert z-[2]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {projectsList.map((card) => {
@@ -56,7 +56,7 @@ const Card = ({ card }: { card: ProjectType }) => {
   return (
     <div
       key={card.title}
-      className="group relative h-[650px] w-[650px] overflow-hidden bg-neutral-200 z-[150]"
+      className="group relative h-[650px] w-[650px] overflow-hidden bg-neutral-200 z-[2]"
     >
       <div
         style={{
@@ -64,10 +64,10 @@ const Card = ({ card }: { card: ProjectType }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-[100] transition-transform duration-300 group-hover:scale-110"
+        className="absolute inset-0 z-[2] transition-transform duration-300 group-hover:scale-110"
       ></div>
-      <div className="absolute inset-0 z-[100] grid place-content-center">
-        <span className="flex flex-row z-[150]">
+      <div className="absolute inset-0 z-[2] grid place-content-center">
+        <span className="flex flex-row z-[2]">
           {/* Render a link for the project title */}
           {card.url && (
             <Link href={card.url} target="_blank">
